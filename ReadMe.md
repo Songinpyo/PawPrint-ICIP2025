@@ -8,7 +8,7 @@ We strongly recommend to use the [Project Page](https://songinpyo.github.io/PawP
 
 And you can also download the dataset [here](https://songinpyo.github.io/PawPrint-Project/).
 
-![Interactive Game at Project Page](Interactive_Game.png)
+[![Interactive Game at Project Page](Interactive_Game.png)](https://songinpyo.github.io/PawPrint-Project/)
 
 ## 🎯 Abstract
 

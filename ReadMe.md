@@ -138,3 +138,7 @@ If you use our work in your research, please cite:
   year={2025}
 }
 ```
+
+## 🤝 Acknowledgements
+
+Many thanks to the pets who patiently walked 🐾, sat, and stared for the camera 🐶 — and to their owners for making it all happen.

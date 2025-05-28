@@ -1,0 +1,28 @@
+parent: base
+
+# Model specific settings
+model:
+  name: "vit_b"
+  pretrained: true
+  mode: "metric"
+  use_local_features: true
+  local_feature_type: "sift"
+  num_local_features: 2000
+  loss_weights:
+    ce: 0.7
+  metric_learning:
+    weights:
+      triplet: 0.0
+      center: 0.3
+      arcface: 0.0
+    triplet:
+      margin: 0.3
+      mining_strategy: "random"
+    center:
+      alpha: 0.1
+    arcface:
+      scale: 30.0
+      margin: 0.5
+
+wandb:
+  name: "vit_sift_center" 

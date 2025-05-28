@@ -1,0 +1,24 @@
+parent: base
+
+# Model specific settings
+model:
+  name: "local_feature"
+  feature_type: "orb"
+  encoding: "bovw"
+  vocab_size: 1500  # ORB typically needs larger vocabulary
+  spatial_pyramid: true
+  pyramid_levels: [2, 4]
+
+# Training settings
+training:
+  epochs: 50
+  optimizer:
+    lr: 0.001
+    weight_decay: 0.0001
+  scheduler:
+    T_max: 50
+    eta_min: 0.00001
+
+wandb:
+  name: "local_feature_orb_bovw"
+  tags: ["local_feature", "orb", "bovw"] 

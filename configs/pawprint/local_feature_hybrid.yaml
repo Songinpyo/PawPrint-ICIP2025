@@ -1,0 +1,35 @@
+parent: base
+
+# Model specific settings
+model:
+  name: "local_feature"
+  feature_type: "sift"  # SIFT generally performs better than ORB
+  encoding: "learnable"
+  num_features: 2000
+  spatial_pyramid: true
+  pyramid_levels: [2, 4]
+  
+  # Additional settings for hybrid approach
+  use_multiple_scales: true
+  scale_factors: [0.5, 1.0, 2.0]  # Multi-scale feature extraction
+  normalize_features: true
+  
+  # Feature post-processing
+  apply_pca: true
+  pca_components: 64
+  apply_power_norm: true
+  power_norm_alpha: 0.5
+
+# Training settings optimized for hybrid approach
+training:
+  epochs: 100
+  optimizer:
+    lr: 0.0003
+    weight_decay: 0.01
+  scheduler:
+    T_max: 100
+    eta_min: 0.00001
+
+wandb:
+  name: "local_feature_hybrid"
+  tags: ["local_feature", "sift", "learnable", "hybrid"] 

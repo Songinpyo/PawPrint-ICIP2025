@@ -1,0 +1,24 @@
+parent: base  # Inherit from base config
+
+# Model specific settings
+model:
+  name: "local_feature"
+  feature_type: "sift"
+  encoding: "bovw"
+  vocab_size: 1000
+  spatial_pyramid: true
+  pyramid_levels: [2, 4]  # Will create 1x1, 2x2, and 4x4 spatial bins
+
+# Training settings
+training:
+  epochs: 50  # Local feature models typically need fewer epochs
+  optimizer:
+    lr: 0.001
+    weight_decay: 0.0001
+  scheduler:
+    T_max: 50
+    eta_min: 0.00001
+
+wandb:
+  name: "local_feature_sift_bovw"
+  tags: ["local_feature", "sift", "bovw"] 

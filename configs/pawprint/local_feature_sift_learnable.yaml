@@ -1,0 +1,24 @@
+parent: base
+
+# Model specific settings
+model:
+  name: "local_feature"
+  feature_type: "sift"
+  encoding: "learnable"
+  num_features: 2000
+  spatial_pyramid: true
+  pyramid_levels: [2, 4]
+
+# Training settings
+training:
+  epochs: 100  # Learnable encoding needs more epochs
+  optimizer:
+    lr: 0.0005
+    weight_decay: 0.01
+  scheduler:
+    T_max: 100
+    eta_min: 0.00001
+
+wandb:
+  name: "local_feature_sift_learnable"
+  tags: ["local_feature", "sift", "learnable"] 

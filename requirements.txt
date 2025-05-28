@@ -1,0 +1,11 @@
+torch
+torchvision
+opencv-contrib-python
+tqdm
+scikit-learn
+timm
+transformers
+nvitop
+pandas
+seaborn
+matplotlib

@@ -8,6 +8,8 @@ We strongly recommend to use the [Project Page](https://songinpyo.github.io/PawP
 
 And you can also download the dataset [here](https://songinpyo.github.io/PawPrint-Project/).
 
+![Interactive Game at Project Page](Interactive_Game.png)
+
 ## 🎯 Abstract
 
 In the United States, as of 2023, pet ownership has reached 66% of households and continues to rise annually. This trend underscores the critical need for effective pet identification and monitoring methods, particularly as nearly 10 million cats and dogs are reported stolen or lost each year. However, traditional methods for finding lost animals like GPS tags or ID photos have limitations—they can be removed, face signal issues, and depend on someone finding and reporting the pet. To address these limitations, we introduce PawPrint and PawPrint+, the first publicly available datasets focused on individual-level footprint identification for dogs and cats.
@@ -93,8 +95,8 @@ python eval_pawprint.py \
 Our framework supports:
 - **Deep Neural Networks**: CNN backbones (ResNet, EfficientNet), Vision Transformers (ViT, Swin)
 - **Local Features**: SIFT, ORB with learnable aggregation
-- **Metric Learning**: Triplet Loss, Center Loss, ArcFace Loss
-- **Hybrid Approaches**: Combination of global and local features
+- **Metric Learning**: Center Loss, ArcFace Loss
+- **Hybrid Approaches**: Combination of deep neural networks and local features
 
 ## 📁 Repository Structure
 
